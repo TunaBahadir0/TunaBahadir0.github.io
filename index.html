@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuna Bahadır | Software Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#0ea5e9', dark: '#0f172a', darker: '#020617' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darker text-gray-300 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Header / Navbar -->
+    <nav class="fixed w-full bg-darker/90 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white tracking-wider">&lt;Tuna/&gt;</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-primary transition-colors">Hakkımda</a>
+                <a href="#experience" class="hover:text-primary transition-colors">Deneyim</a>
+                <a href="#projects" class="hover:text-primary transition-colors">Projeler</a>
+                <a href="#contact" class="hover:text-primary transition-colors">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center min-h-screen">
+        <div class="md:w-2/3">
+            <p class="text-primary font-semibold tracking-wide mb-2">Merhaba, ben</p>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Tuna Bahadır.</h1>
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-400 mb-6">Backend & Yapay Zeka Mimarileri Geliştiriyorum.</h2>
+            <p class="text-lg text-gray-400 max-w-2xl mb-8 leading-relaxed">
+                İstanbul Sağlık ve Teknoloji Üniversitesi Yazılım Mühendisliği son sınıf öğrencisiyim. Ölçeklenebilir veri boru hatları (data pipelines) tasarlıyor, C++ ile sistem seviyesi optimizasyonlar yapıyor ve yapay zekayı gerçek dünya problemlerine entegre ediyorum.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#projects" class="bg-primary hover:bg-sky-400 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">Projelerimi Gör</a>
+                <a href="https://github.com/TunaBahadir0" target="_blank" class="border border-gray-600 hover:border-primary hover:text-primary text-gray-300 font-semibold py-3 px-6 rounded-lg transition-all duration-300"><i class="fa-brands fa-github mr-2"></i>GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & About Section -->
+    <section id="about" class="py-20 bg-dark px-4 sm:px-6 border-y border-gray-800">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-3xl font-bold text-white mb-6 flex items-center"><span class="text-primary mr-2">01.</span> Hakkımda</h3>
+                <p class="text-gray-400 leading-relaxed mb-4">
+                    Sadece arayüz kodlamaktan ziyade, sistemin kaputunun altında yatan mimariyi kurgulamayı, verimlilik odaklı problem çözmeyi ve API'leri konuşturmayı seven bir mühendislik anlayışına sahibim.
+                </p>
+                <p class="text-gray-400 leading-relaxed">
+                    Boş zamanlarımda tarih ve uzay bilimleri üzerine okumalar yapıyor ve bu tutkumu teknik becerilerimle birleştirerek, otonom sistemler (LLM & TTS) aracılığıyla dijital içerikler üretiyorum.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-6">Teknoloji Yığını</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-gray-800 text-primary rounded-md text-sm font-semibold border border-gray-700 hover:border-primary transition-colors">C / C++</span>
+                    <span class="px-4 py-2 bg-gray-800 text-primary rounded-md text-sm font-semibold border border-gray-700 hover:border-primary transition-colors">Python</span>
+                    <span class="px-4 py-2 bg-gray-800 text-primary rounded-md text-sm font-semibold border border-gray-700 hover:border-primary transition-colors">Django REST</span>
+                    <span class="px-4 py-2 bg-gray-800 text-gray-300 rounded-md text-sm font-semibold border border-gray-700">OpenCV</span>
+                    <span class="px-4 py-2 bg-gray-800 text-gray-300 rounded-md text-sm font-semibold border border-gray-700">TensorFlow</span>
+                    <span class="px-4 py-2 bg-gray-800 text-gray-300 rounded-md text-sm font-semibold border border-gray-700">SQL / PostgreSQL</span>
+                    <span class="px-4 py-2 bg-gray-800 text-gray-300 rounded-md text-sm font-semibold border border-gray-700">RESTful API</span>
+                    <span class="px-4 py-2 bg-gray-800 text-gray-300 rounded-md text-sm font-semibold border border-gray-700">JWT</span>
+                    <span class="px-4 py-2 bg-gray-800 text-gray-300 rounded-md text-sm font-semibold border border-gray-700">Git & GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold text-white mb-10 flex items-center"><span class="text-primary mr-2">02.</span> Deneyim</h3>
+        <div class="border-l-2 border-gray-800 pl-6 ml-4 relative">
+            <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-2"></div>
+            <h4 class="text-xl font-bold text-white">Yazılım Geliştirici Stajyeri (C++) <span class="text-primary">@ Nitra Games</span></h4>
+            <p class="text-sm text-gray-500 mb-4 mt-1">Ağustos 2024 - Ekim 2024</p>
+            <ul class="list-none space-y-3 text-gray-400">
+                <li class="flex items-start"><i class="fa-solid fa-angle-right text-primary mt-1 mr-3"></i> C++ ile bellek yönetimi (memory management) sistemleri tasarlayarak çalışma zamanı yükünü (runtime overhead) optimize ettim.</li>
+                <li class="flex items-start"><i class="fa-solid fa-angle-right text-primary mt-1 mr-3"></i> Motor mimarisindeki kritik güncellemeler sayesinde sistem genelinde %20 performans artışı sağladım.</li>
+                <li class="flex items-start"><i class="fa-solid fa-angle-right text-primary mt-1 mr-3"></i> Yeni geliştiriciler için teknik API dokümantasyonları hazırlayarak takım verimliliğini %30 artırdım.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-dark px-4 sm:px-6 border-y border-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-white mb-10 flex items-center"><span class="text-primary mr-2">03.</span> Öne Çıkan Projeler</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:-translate-y-2 hover:border-primary transition-all duration-300">
+                    <div class="flex justify-between items-center mb-4">
+                        <i class="fa-regular fa-folder-open text-4xl text-primary"></i>
+                        <a href="https://github.com/TunaBahadir0" target="_blank" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-3">Yapay Zeka Destekli Mülakat Asistanı</h4>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                        Django REST Framework ve JWT kullanarak güvenli, ölçeklenebilir bir backend mimarisi tasarladığım bitirme projem. Sistem, OpenCV ve TensorFlow kullanarak kullanıcının göz temasını ve anlık duygu değişimlerini analiz eder, bu verileri işleyerek performans raporu sunar.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
+                        <span>Python</span> <span>Django REST</span> <span>OpenCV</span> <span>TensorFlow</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:-translate-y-2 hover:border-primary transition-all duration-300">
+                    <div class="flex justify-between items-center mb-4">
+                        <i class="fa-solid fa-network-wired text-4xl text-primary"></i>
+                        <a href="https://github.com/TunaBahadir0" target="_blank" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-3">Otonom İçerik Üretim Boru Hattı</h4>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                        Tarih ve uzay bilimleri temalı içerikler oluşturmak için geliştirdiğim asenkron veri boru hattı (data pipeline). LLM (Büyük Dil Modelleri), Metinden Sese (TTS) ve görsel üretim API'lerini Python ile birbirine bağlayarak uçtan uca otonom bir medya üretim süreci kurguladım.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
+                        <span>Python</span> <span>REST API</span> <span>LLM</span> <span>Data Pipeline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-4 sm:px-6 max-w-3xl mx-auto text-center">
+        <h3 class="text-primary font-mono mb-4">04. Sırada Ne Var?</h3>
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">İletişime Geçin</h2>
+        <p class="text-gray-400 mb-10 leading-relaxed">
+            Şu anda yeni mezun ve aday mühendis programları için aktif olarak fırsatları değerlendiriyorum. Backend mimarileri, yapay zeka entegrasyonları veya C++ optimizasyonları üzerine konuşmak isterseniz bana her zaman ulaşabilirsiniz.
+        </p>
+        <a href="mailto:tunabahadir6@gmail.com" class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-4 px-8 rounded-lg transition-all duration-300">Merhaba De!</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-sm text-gray-600 border-t border-gray-800">
+        <p>Tasarım ve Geliştirme: Tuna Bahadır &copy; 2026</p>
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="https://linkedin.com/in/tuna-bahadır" target="_blank" class="hover:text-primary transition-colors text-lg"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/TunaBahadir0" target="_blank" class="hover:text-primary transition-colors text-lg"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:tunabahadir6@gmail.com" class="hover:text-primary transition-colors text-lg"><i class="fa-regular fa-envelope"></i></a>
+            <a href="tel:+905517215025" class="hover:text-primary transition-colors text-lg"><i class="fa-solid fa-phone"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
