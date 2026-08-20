@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuna Bahadır | AI Engineer & Backend Developer</title>
+    <meta name="description" content="Yapay zeka entegrasyonları ve kurumsal backend mimarileri geliştiren yazılım mühendisi. ABP Framework/DDD, Python/TensorFlow ve C++ deneyimi.">
+    <meta property="og:title" content="Tuna Bahadır | AI Engineer & Backend Developer">
+    <meta property="og:description" content="Yapay zeka entegrasyonları ve kurumsal backend mimarileri geliştiren yazılım mühendisi.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tunabahadir0.github.io/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Tuna Bahadır | AI Engineer & Backend Developer">
+    <meta name="twitter:description" content="Yapay zeka entegrasyonları ve kurumsal backend mimarileri geliştiren yazılım mühendisi.">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN -->
@@ -47,9 +55,10 @@
             <p class="text-lg text-gray-400 max-w-2xl mb-8 leading-relaxed">
                 İstanbul Sağlık ve Teknoloji Üniversitesi Yazılım Mühendisliği mezunuyum. Ölçeklenebilir veri boru hatları (data pipelines) tasarlıyor, ABP Framework ve Domain-Driven Design ile kurumsal backend sistemleri kuruyor, C++ ile sistem seviyesi optimizasyonlar yapıyor ve yapay zekayı gerçek dünya problemlerine entegre ediyorum.
             </p>
-            <div class="flex space-x-4">
+            <div class="flex flex-wrap gap-4">
                 <a href="#projects" class="bg-primary hover:bg-sky-400 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">Projelerimi Gör</a>
                 <a href="https://github.com/TunaBahadir0" target="_blank" class="border border-gray-600 hover:border-primary hover:text-primary text-gray-300 font-semibold py-3 px-6 rounded-lg transition-all duration-300"><i class="fa-brands fa-github mr-2"></i>GitHub</a>
+                <a href="Tuna_Bahadir_CV.pdf" target="_blank" class="border border-gray-600 hover:border-primary hover:text-primary text-gray-300 font-semibold py-3 px-6 rounded-lg transition-all duration-300"><i class="fa-solid fa-file-arrow-down mr-2"></i>CV İndir</a>
             </div>
         </div>
     </section>
@@ -73,8 +82,8 @@
                 <div class="flex flex-wrap gap-3 mb-6">
                     <span class="px-4 py-2 bg-gray-800 text-primary rounded-md text-sm font-semibold border border-gray-700 hover:border-primary transition-colors">Python</span>
                     <span class="px-4 py-2 bg-gray-800 text-primary rounded-md text-sm font-semibold border border-gray-700 hover:border-primary transition-colors">OpenCV</span>
-                    <span class="px-4 py-2 bg-gray-800 text-primary rounded-md text-sm font-semibold border border-gray-700 hover:border-primary transition-colors">TensorFlow</span>
-                    <span class="px-4 py-2 bg-gray-800 text-primary rounded-md text-sm font-semibold border border-gray-700 hover:border-primary transition-colors">DeepFace</span>
+                    <span class="px-4 py-2 bg-gray-800 text-primary rounded-md text-sm font-semibold border border-gray-700 hover:border-primary transition-colors">TensorFlow / Keras</span>
+                    <span class="px-4 py-2 bg-gray-800 text-primary rounded-md text-sm font-semibold border border-gray-700 hover:border-primary transition-colors">MediaPipe</span>
                     <span class="px-4 py-2 bg-gray-800 text-gray-300 rounded-md text-sm font-semibold border border-gray-700">LLM Entegrasyonu</span>
                     <span class="px-4 py-2 bg-gray-800 text-gray-300 rounded-md text-sm font-semibold border border-gray-700">TTS API</span>
                     <span class="px-4 py-2 bg-gray-800 text-gray-300 rounded-md text-sm font-semibold border border-gray-700">Prompt Engineering</span>
@@ -142,14 +151,15 @@
                 <div class="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:-translate-y-2 hover:border-primary transition-all duration-300">
                     <div class="flex justify-between items-center mb-4">
                         <i class="fa-regular fa-folder-open text-4xl text-primary"></i>
-                        <a href="https://github.com/TunaBahadir0" target="_blank" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/TunaBahadir0/InterviewAssistantAI-backend" target="_blank" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <h4 class="text-2xl font-bold text-white mb-3">Yapay Zeka Destekli Mülakat Asistanı</h4>
+                    <p class="text-gray-400 mb-2 text-xs font-semibold text-primary uppercase tracking-wide">Bitirme Projesi · 2 Kişilik Takım</p>
                     <p class="text-gray-400 mb-6 text-sm leading-relaxed">
-                        Django REST Framework ve JWT kullanarak güvenli, ölçeklenebilir bir backend mimarisi tasarladığım bitirme projem. Sistem, OpenCV ve TensorFlow kullanarak kullanıcının göz temasını ve anlık duygu değişimlerini analiz eder, bu verileri işleyerek performans raporu sunar.
+                        Ekipteki katkım: TensorFlow/Keras ile MobileNetV2 tabanlı bir Yüz İfadesi Tanıma (FER) modeli eğitmek ve OpenCV ile MediaPipe kullanarak gerçek zamanlı göz teması takip motorunu geliştirmekti. Bu AI motorunu, takım arkadaşımın kurduğu Django Channels tabanlı WebSocket backend'ine entegre ederek mülakat performans raporlarının canlı üretilmesini sağladım.
                     </p>
                     <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
-                        <span>Python</span> <span>Django REST</span> <span>OpenCV</span> <span>TensorFlow</span>
+                        <span>Python</span> <span>TensorFlow/Keras</span> <span>OpenCV</span> <span>MediaPipe</span> <span>Django Channels</span>
                     </div>
                 </div>
 
@@ -157,7 +167,6 @@
                 <div class="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:-translate-y-2 hover:border-primary transition-all duration-300">
                     <div class="flex justify-between items-center mb-4">
                         <i class="fa-solid fa-network-wired text-4xl text-primary"></i>
-                        <a href="https://github.com/TunaBahadir0" target="_blank" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <h4 class="text-2xl font-bold text-white mb-3">Otonom İçerik Üretim Boru Hattı</h4>
                     <p class="text-gray-400 mb-6 text-sm leading-relaxed">
